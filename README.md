@@ -48,7 +48,7 @@
 
   <img src="https://i.postimg.cc/jSZxGx7N/20-July-03-56-18-PM-vlc.jpg" alt="dsl to aml;" />
 
-- Open the software *Xiasl-Win64* and load the *SSDT-Optane-Disable.dsl* file into it.  [File Here](https://anilabhadatta-my.sharepoint.com/:u:/g/personal/birajsarkar_anilabhadatta_onmicrosoft_com/EQlw7JGWHzBAiNdxE7gcla0BwA2mvAw1S6_SRDe2FSfZkw?e=od9Qy8)
+- Open the software *Xiasl-Win64* and load the *SSDT-Optane-Disable.dsl* file into it.  [File Here](https://github.com/Biraj2004/intel-optane-ssd-disable/blob/main/SSDT-Optane-Disable.aml)
 
 - Paste the copied BIOS-id value and replace the existing BIOS-id with the new one. Save it.
 
