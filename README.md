@@ -4,7 +4,12 @@
 
 - Xiasl-Win64 [Here](https://github.com/ic005k/Xiasl/releases/download/1.1.67/Xiasl-Win64.zip)
 - OCAT-Win64 [Here](https://github.com/ic005k/OCAuxiliaryTools/releases/download/20250001/OCAT-Win64.zip)
-- This is the quick and free way to disable Intel® Optane™ Memory H10 via the SSDT patch.
+- Windows Device Manager (for hardware inspection)
+- Working OpenCore EFI
+- Laptop Used - ASUS-Vivobook-Gaming (F571GT)
+
+Intel® Optane™ SSDs, especially the H10 variant, present compatibility issues in Hackintosh setups due to their hybrid structure (Optane + NVMe).
+This guide walks you through identifying the device, patching using ACPI SSDTs, and integrating the changes with OpenCore using OCAT.
 
 ### 2. Identifying the Optane SSD
 
@@ -16,7 +21,7 @@
 
   <img src="https://i.postimg.cc/HsV9q9Bz/20-July-02-38-04-PM-vlc.jpg" style="zoom: 68%;" />
 
-- All we need to do is find out which of these two devices is Intel® Optane™ Memory and get its BIOS device path.
+- All we need to do is find out which of these two devices is Intel® Optane™ Memory.
 
 - In Disk Drives, generally the one ending with O is the Optane. (*In our case - INTEL HBRPEKNX0202AO*). See and note the last two digits of the Value (*In our case it's EA*).
 
@@ -48,7 +53,7 @@
 
   <img src="https://i.postimg.cc/jSZxGx7N/20-July-03-56-18-PM-vlc.jpg" alt="dsl to aml;" />
 
-- Open the software *Xiasl-Win64* and load the *SSDT-Optane-Disable.dsl* file into it.  [File Here](https://github.com/Biraj2004/intel-optane-ssd-disable/blob/main/SSDT-Optane-Disable.aml)
+- Open the software *Xiasl-Win64* and load the *SSDT-Optane-Disable* file into it.  [File Here](https://github.com/Biraj2004/intel-optane-ssd-disable/blob/main/SSDT-Optane-Disable.aml)
 
 - Paste the copied BIOS-id value and replace the existing BIOS-id with the new one. Save it.
 
@@ -73,3 +78,28 @@
   ![True-Disable](https://i.postimg.cc/ZRcXqcrM/20-July-04-26-19-PM-vlc.jpg)
 
 ### Save it and exit. Enjoy!!
+
+---
+
+## Credits
+
+- Original patching method inspired by various Hackintosh community forums and CSDN Blog.
+- Written & compiled by [Biraj Sarkar](https://github.com/Biraj2004)
+
+---
+
+## Contributing
+
+Have a better method or updated patch? Feel free to fork and submit a PR. Let's make Hackintosh easier for everyone.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## ⭐ Show Your Support
+
+If this guide helped you, consider starring the repo or sharing it with others in the Hackintosh community!
