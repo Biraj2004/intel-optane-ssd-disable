@@ -43,6 +43,7 @@
 - The binary renaming of ACPI is not covered here.
 
   > [!IMPORTANT]
+  > 
   > If your original DSDT table has a _DSM method already defined for that device, then you need to change the original _DSM method to XDSM or other first using the binary rename method, otherwise two duplicate methods are not allowed!
 
   <img src="https://i.postimg.cc/jSZxGx7N/20-July-03-56-18-PM-vlc.jpg" alt="dsl to aml;" />
